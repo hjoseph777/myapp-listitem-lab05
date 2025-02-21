@@ -1,10 +1,15 @@
+'use client';
+
 import React from 'react';
+import ItemList from '@/components/ItemList';
 
 export default function Page() {
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Welcome to MyApp ListItem Lab05</h1>
-      <p>This is the main entry point of the application.</p>
-    </div>
+    <main className="min-h-screen p-8 bg-gray-50">
+      <div className="container mx-auto">
+        <h1 className="text-3xl font-bold text-center mb-8">MyApp ListItem Lab05</h1>
+        <ItemList title="My Todo List" />
+      </div>
+    </main>
   );
 } 
